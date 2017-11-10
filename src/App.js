@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const COLUMN = 10;
+const COLUMN = 5;
 const LIMIT = 5;
 
 class App extends Component {
