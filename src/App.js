@@ -10,7 +10,7 @@ class App extends Component {
     this.column = props.column || COLUMN;
     this.size = Math.pow(this.column, 2);
     this.limit = props.limit || LIMIT ;
-    const occupied = this.pickNonRepeatingNumbers(this.size, this.limit);
+    const occupied = props.occupied || this.pickNonRepeatingNumbers(this.size, this.limit);
     const lands = new Array(this.size).fill(0).map((v, i) => {
       if (occupied.indexOf(i) > 0) return 1;
       return 0;
