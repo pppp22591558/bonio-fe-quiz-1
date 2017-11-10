@@ -1,14 +1,17 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-  margin: 0 auto;
   top: 50%;
   left: 0;
   position: absolute;
   transform: translateY(-50%);
   right: 0;
+}
+
+.lands {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .land {
