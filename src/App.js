@@ -56,6 +56,7 @@ class App extends Component {
           點到沒有炸彈的土地會顯示綠色<br/>
           拆到炸彈會顯示紅色<br/>
           拆光了會顯示勝利！<br/>
+          (建議可以使用<a href="https://github.com/facebookincubator/create-react-app">create-react-app</a>來生成scaffold)
         </div>
         <div className="lands">
           {
