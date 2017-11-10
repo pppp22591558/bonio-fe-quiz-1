@@ -10,10 +10,8 @@ class App extends Component {
     this.column = props.column || COLUMN;
     this.size = Math.pow(this.column, 2);
     this.limit = props.limit || LIMIT ;
-    const occupied = props.occupied || this.pickNonRepeatingNumbers(this.size, this.limit);
-    const lands = new Array(this.size).fill(0);
-    this.lands = lands;
-    this.occupied = occupied;
+    this.occupied = props.occupied || this.pickNonRepeatingNumbers(this.size, this.limit);
+    this.lands = new Array(this.size).fill(0);
   }
   state = {
     chosenLands: [],
