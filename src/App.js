@@ -11,10 +11,7 @@ class App extends Component {
     this.size = Math.pow(this.column, 2);
     this.limit = props.limit || LIMIT ;
     const occupied = props.occupied || this.pickNonRepeatingNumbers(this.size, this.limit);
-    const lands = new Array(this.size).fill(0).map((v, i) => {
-      if (occupied.indexOf(i) > 0) return 1;
-      return 0;
-    });
+    const lands = new Array(this.size).fill(0);
     this.lands = lands;
     this.occupied = occupied;
   }
@@ -70,7 +67,7 @@ class App extends Component {
                   key={i}
                   onClick={() => {
                     if (isChosen) return;
-                    this.selectLand(i, land)
+                    this.selectLand(i)
                   }}
                 />
               );
